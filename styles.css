@@ -486,6 +486,36 @@ h2.left-align {
   margin: 0 auto;
 }
 
+.page-hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  text-align: left;
+}
+
+.page-hero-photo {
+  flex: 0 0 160px;
+}
+
+.page-hero-photo img {
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .page-hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .page-hero-photo {
+    flex: 0 0 auto;
+    max-width: 140px;
+  }
+}
+
 /* Tools page */
 .tools-section {
   padding: 80px 0;
