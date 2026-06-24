@@ -99,7 +99,9 @@ nav a.active {
 /* Hero */
 .hero {
   position: relative;
-  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  background-image: url('assets/with-client.jpg');
+  background-size: cover;
+  background-position: center;
   color: #fff;
   padding: 100px 0;
   text-align: center;
@@ -110,10 +112,7 @@ nav a.active {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('assets/with-client.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.3;
+  background: rgba(0, 0, 0, 0.45);
   z-index: 0;
 }
 
